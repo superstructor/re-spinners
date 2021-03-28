@@ -1,0 +1,8 @@
+/.idea/
+/*.iml
+/.shadow-cljs/
+/shadow-cljs.edn
+/node_modules/
+/resources/public/scripts/compiled/
+/target/
+/pom.xml
