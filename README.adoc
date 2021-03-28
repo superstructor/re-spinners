@@ -1,0 +1,72 @@
+:source-highlighter: coderay
+:source-language: clojure
+:toc:
+:toc-placement: preamble
+:sectlinks:
+:sectanchors:
+:toc:
+:icons: font
+
+image:https://img.shields.io/clojars/v/superstructor/re-spinners?style=for-the-badge&logo=clojure&logoColor=fff["Clojars Project", link="https://clojars.org/superstructor/re-spinners"]
+image:https://img.shields.io/github/issues-raw/superstructor/re-spinners?style=for-the-badge&logo=github["GitHub issues", link="https://github.com/superstructor/re-spinners/issues"]
+image:https://img.shields.io/github/license/superstructor/re-spinners?style=for-the-badge["License", link="https://github.com/superstructor/re-spinners/blob/master/LICENSE"]
+
+= Reagent wrapper for React Spinners
+
+A simple Reagent wrapper around the link:https://github.com/davidhu2000/react-spinners[React Spinners library].
+
+It really doesn't do a lot, alternatively you could just use Reagent's `[:>` syntax to wrap the plain React components
+yourself. I prefer to hide the details of emotion css etc behind this simple shim, so it looks like any other Reagent
+component.
+
+If you use shadow-cljs, the link:https://www.npmjs.com/package/react-spinners[`react-spinners`],
+link:https://www.npmjs.com/package/@emotion/core[`@emotion/core`] and
+link:https://www.npmjs.com/package/@emotion/react[`@emotion/react`] npm dependencies will be pulled in automatically
+via `src/deps.cljs` `:npm-deps`.
+
+If you use another build system, you will probably should just switch to using shadow-cljs.
+
+== Quick Start
+
+=== Step 1. Add Dependency
+
+Add the following project dependency:
+image:https://img.shields.io/clojars/v/superstructor/re-spinners?style=for-the-badge&logo=clojure&logoColor=fff["Clojars Project", link="https://clojars.org/superstructor/re-spinners"]
+
+Requires that you have reagent as a dependency of your project.
+
+=== Step 2. Use
+
+    (ns my-app
+      (:require
+        [re-spinners.core :refer [pacman-loader]]))
+
+    (defn panel
+      []
+      [pacman-loader
+        {:size   30
+         :margin 2}]
+
+== License
+
+The MIT License (MIT)
+
+Copyright (c) 2019-2021 Isaac Johnston
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
