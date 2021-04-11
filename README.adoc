@@ -24,7 +24,7 @@ link:https://www.npmjs.com/package/@emotion/core[`@emotion/core`] and
 link:https://www.npmjs.com/package/@emotion/react[`@emotion/react`] npm dependencies will be pulled in automatically
 via `src/deps.cljs` `:npm-deps`.
 
-If you use another build system, you will probably should just switch to using shadow-cljs.
+If you use another build system, you should probably just switch to using shadow-cljs.
 
 == Quick Start
 
