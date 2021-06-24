@@ -1,4 +1,4 @@
-{:npm-deps     {"react-spinners"        "0.11.0-beta.1"
+{:npm-deps     {"react-spinners"        "0.11.0"
                 "@emotion/core"         "11.0.0"
                 "@emotion/react"        "11.4.0"}
  :npm-dev-deps {"shadow-cljs"           "2.12.5"
