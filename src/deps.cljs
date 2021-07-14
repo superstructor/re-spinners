@@ -3,7 +3,7 @@
                 "@emotion/react"        "11.4.0"}
  :npm-dev-deps {"react"                 "17.0.2"
                 "react-dom"             "17.0.2"
-                "shadow-cljs"           "2.14.5"
+                "shadow-cljs"           "2.15.1"
                 "karma"                 "6.3.4"
                 "karma-chrome-launcher" "3.1.0"
                 "karma-cljs-test"       "0.1.0"
